@@ -1,6 +1,9 @@
-p{
+.odd{
     background-color: #ffb6c1;
-    font-family: Verdana, DejaVu Sans, sans-serif;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.adjust-font-size{
     font-size: 24px;
 }
 
@@ -12,5 +15,4 @@ p{
 #id-02{
     background-color:#90ee90;
     font-weight: 700;
-    font-size: 24px;
 }
