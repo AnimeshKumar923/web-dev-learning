@@ -1,0 +1,22 @@
+*{
+    font-size: 50px;
+    box-sizing: border-box;
+}
+
+.box-1{
+    background-color: cyan;
+    padding:10px;
+    border: 30px solid crimson;
+    margin: 60px;
+    height: 130px;
+    width: 200px;
+}
+
+.box-2{
+    background-color: rgb(66, 235, 0);
+    padding:10px;
+    border: 30px solid rgb(53, 104, 243);
+    margin: 60px;
+    height: 130px;
+    width: 200px;
+}
