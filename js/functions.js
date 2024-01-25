@@ -4,15 +4,13 @@ console.log(`\nInput string length = ${str.length}`)
 capitalize(str);
 lastLetter(str);
 
-let a = prompt("Enter first number");
-let b = prompt("Enter second number");
-let aInt = parseInt(a);
-let bInt = parseInt(b);
-console.log(`type = ${typeof aInt}`);
-const sevenRes = add7(aInt);
+let a = parseInt(prompt("Enter first number"));
+let b = parseInt(prompt("Enter second number"));
+console.log(`type = ${typeof a}`);
+const sevenRes = add7(a);
 console.log(`adding 7 to ${a} = ${sevenRes}`);
-const multiplyRes = multiply(aInt,bInt);
-console.log(`muliplying ${aInt} with ${bInt} gives = ${multiplyRes}`);
+const multiplyRes = multiply(a,b);
+console.log(`muliplying ${a} with ${b} gives = ${multiplyRes}`);
 
 
 
