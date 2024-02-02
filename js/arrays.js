@@ -91,7 +91,35 @@ concatenateStr = fruits.concat("Kiwi"); // passing string as an argument
 console.log(concatenateStr);
 
 
+const cars = ["gtr", "bmw", "audi", "porsche", "koenigsegg", "nissan", "tata", "ferrari", "aston martin", "lamborghini", "911", "M5"]
+console.log(cars);
+// cars.copyWithin(1, 8);
+// cars.copyWithin(2, 0, 2);
+// overwrites the existing values
+// does not add items to the array
+// does not change the length of the array
+console.log(cars);
+
+const myArr = [[1,2],[3,4],[5,6]];
+console.log(myArr);
+const newArr = myArr.flat();
+console.log(newArr);
 
 console.log(fruits);
-fruits.copyWithin(2, 0);
+// fruits.splice(2, 0, "Lemon", "Kiwi");
+fruits.splice(0,1); // removes 0th element 
+// .splice() --> this method modifies the original array
 console.log(fruits);
+
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const spliced = months.toSpliced(0, 1); // .toSpliced() --> difference is that this method creates a new array and modifies the elements in that only
+console.log(spliced);
+
+const favCars = cars.slice(3,5); // .slice() --> creates a new array; does not remove any elements from the source array
+favCars.push(cars[8]);
+console.log(favCars);
+
+
+console.log(cars);
+let tostr = cars.toString();
+console.log(tostr);
