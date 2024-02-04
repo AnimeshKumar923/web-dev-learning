@@ -9,4 +9,5 @@
 # Ignore all local history of files
 **/.history
 **/.vscode
-
+**/node_modules
+**/package-lock.json
