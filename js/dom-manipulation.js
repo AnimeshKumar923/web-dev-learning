@@ -23,3 +23,28 @@ div1.appendChild(h1);
 const p2 = document.createElement("p");
 p2.textContent = "ME TOO!";
 div1.appendChild(p2);
+
+
+const btns = document.querySelectorAll("button");
+
+// METHOD 2
+// btn.onclick = alertFunction;
+
+// METHOD 3
+// btn.addEventListener("click", alertFunction);
+
+// btn.addEventListener('click', function (e) {
+    // e.target.style.background = "blue";
+    // console.log(e.target);
+//     console.log(e);
+// });
+
+btns.forEach((button) => {
+    button.addEventListener("click", () => {
+        alertFunction();
+    });
+});
+
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+}
