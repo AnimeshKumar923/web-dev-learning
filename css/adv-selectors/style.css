@@ -1,0 +1,42 @@
+/* Select all <p> elements */
+p {
+  color: rgb(33, 133, 3);
+}
+
+/* Select the element with the class "intro" */
+.intro {
+  background-color: lightgray;
+}
+
+/* Select the <h1> element */
+h1 {
+  font-size: 2em;
+}
+
+nav a {
+  color: brown;
+}
+
+section p {
+  font-style: italic;
+}
+
+nav > ul > li {
+  margin: 10px 0;
+}
+
+.features > article {
+  border: 3px solid #ccc;
+}
+
+h2 + p {
+  color: red;
+}
+
+article + article {
+  margin-top: 15px;
+}
+
+h3 ~ p {
+  color: purple;
+}
