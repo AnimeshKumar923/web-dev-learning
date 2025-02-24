@@ -28,21 +28,36 @@ function calculator(a, b) {
 function caesarCipher(str, shift) {
   let result = "";
   let charcode = 0;
-  let specials=/[^a-zA-Z]/;
+  let specials = /[^a-zA-Z]/;
 
   for (let i = 0; i < str.length; i++) {
-    if(specials.test(str[i])){
+    if (specials.test(str[i])) {
       result += str[i];
       continue;
-    };
+    }
     charcode = str[i].charCodeAt() + shift;
     result += String.fromCharCode(charcode);
   }
   return result;
+}
+
+function analyzeArray(arr) {
+  let sum = 0;
+  arr.forEach((element) => {
+    sum += element;
+  });
+
+  return {
+    average: sum / arr.length,
+    min: Math.min(...arr),
+    max: Math.max(...arr),
+    length: arr.length,
+  };
 }
 module.exports = {
   capitalize,
   reverseStr,
   calculator,
   caesarCipher,
+  analyzeArray,
 };
